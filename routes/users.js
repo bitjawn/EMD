@@ -8,7 +8,7 @@ var csrfProtection = csrf();
 router.use(csrfProtection);
 
 router.get('/profile', isLoggedIn, function(req, res, next){
-    const greet = 'Hey ' + cfc(req.user.fname);
+    const greet = cfc('hey ' + req.user.fname);
     const user = req.user;
     res.render('user/profile',{title:'Profile', greeting:greet, user:user, admin:false});
 });
