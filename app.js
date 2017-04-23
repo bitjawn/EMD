@@ -19,7 +19,7 @@ var admins = require('./routes/usersAdmin');
 
 var app = express();
 
-mongoose.connect('localhost:27017/accountmanager');
+mongoose.connect('localhost:27017/sellingmyshit_users');
 require('./config/passport');
 
 // view engine setup
