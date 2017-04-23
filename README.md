@@ -7,7 +7,6 @@
     <li>Express: 4.15.2</li>
     <li>Express-Handlebars: 3.0.0</li>
     <li>Nodemon: 1.11.0</li>
-    <li>Mocha: 3.2.0</li>
 </ul>
 <h3>Instructions</h3>
 
@@ -23,8 +22,5 @@
  
 # Run App
  npm start
-
-# Build App
- npm run build
 ```
 <h5>... still under construction</h5>

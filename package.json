@@ -4,9 +4,6 @@
   "description": "Express API application",
   "main": "app.js",
   "scripts": {
-    "proman": "mocha test/product-manager-tests.js",
-    "procla": "mocha test/product-class-tests.js",
-    "tests": "mocha test",
     "start": "nodemon app"
   },
   "author": "Rick Walker",
