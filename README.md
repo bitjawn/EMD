@@ -3,7 +3,7 @@
 <ul>
     <li>NodeJS: 7.7.4</li>
     <li>NPM: 4.5.0</li>
-    <li>MongoDB 3.4.1</li>
+    <li>MongoDB: 3.4.1</li>
     <li>Express: 4.15.2</li>
     <li>Express-Handlebars: 3.0.0</li>
     <li>Nodemon: 1.11.0</li>
