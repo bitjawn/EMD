@@ -2,7 +2,7 @@
 <h3>A node web application template.</h3>
 
 ```bash
- ## Customize the products and user schemas using the MongoDB service
+ ## Customize the products and user schemas.
  # The default user database: line 22 in the app.js file
  # The product and user schemas located in the models directory
  # The product database seeder located in the seed directory
