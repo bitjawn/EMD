@@ -1,0 +1,38 @@
+{{# if products }}
+<div class="row">
+    <div class="small-12 medium-12 large-12 columns v-scroll">
+        {{# each products }}
+            <div class="media-object">
+                <div class="media-object-section align-self-center stack-for-small">
+                    <strong>{{this.item.title}}</strong>
+                </div>
+                <div class="media-object-section main-section">
+                    <span class="label">${{this.price}}</span>
+                    <span class="label">Qty {{this.qty}}</span>
+                </div>
+                <div class="media-object-section align-self-bottom">
+                    <a href="#">Reduce by 1</a>
+                    <a href="#">Remove All</a>
+                </div>              
+            </div>
+        {{/each}}
+    </div>
+</div>   
+<div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+        <strong>Total: {{ totalPrice }}</strong>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+        <a href="/checkout" class="button" type="button">Checkout</a>
+    </div>
+</div>
+{{ else }}
+<div class="row">
+    <div class="small-12 medium-12 large-12 columns">
+        <h2>No Items in Cart</h2>
+    </div>
+</div>
+{{/if}}

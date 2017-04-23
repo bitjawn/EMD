@@ -1,0 +1,132 @@
+/* Global */
+.v-scroll {
+	overflow:scroll;
+}	
+
+.products {
+    height:80vh;
+}
+
+.paragraph {
+    width:30vw;
+}
+
+.hidden {
+    display:none;
+}
+
+
+img {
+    height:170px;
+    width:200px;
+    padding:0;
+    margin:0;
+}
+
+#collapsing-tabs {
+    margin-top:10px;
+}
+
+.profile-thumbnail {
+    height:15%;
+    width:70%;
+    padding:0;
+    margin:0;
+}
+
+.video-content {
+    position:absolute;
+    top: 70px;
+    left:0px;
+    height: 100vh;
+    width:100vw;
+    z-index: -1;
+}
+
+.video-content video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.index {
+    color: #fff;
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Page */
+.contact {
+    margin-top:10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Product Page */
+.media-object {
+    margin:10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Admin Profile */
+.admin-form [type="text"] {
+    height:30px;
+}
+
+.admin-form [type="submit"] {
+    height:30px;
+}
+
+.new-product-form {
+    width:600px;
+    margin:auto;
+    padding:10px;
+}
+
+.new-product {
+    
+}
+
+
+
+
+
+
+/* Admin Sign in Page */
+.admin-signin {
+    padding:20px;
+}

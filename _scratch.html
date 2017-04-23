@@ -1,0 +1,27 @@
+{{# each profiles }}
+                    <li class="accordion-item is-active" data-accordion-item>
+                        <a href="#" class="accordion-title">{{ title }}</a>
+                        <div class="accordion-content" data-tab-content>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th width="200">Account Data</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Password</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>{{ this.username }}</td>
+                                        <td>{{ this.email }}</td>
+                                        <td>{{ this.password }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            {{ each extra }}
+                                <p>{{ this }}</p>
+                            {{/each}}
+                        </div>
+                    </li>
+                {{/each}}
