@@ -1,6 +1,6 @@
 @echo off
 
-title Shopping Cart Build
+title Express Demo Build
 color e
 prompt $sBuilder$s$e$s
 

@@ -1,6 +1,6 @@
 @echo off
 
-title Shopping Cart To Github
+title Express Demo To Github
 color e
 prompt $sGithub$s$e$s
 

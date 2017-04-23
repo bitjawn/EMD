@@ -1,6 +1,6 @@
 @echo off
 
-title Shopping Cart Demo Package Manager
+title Express Demo Package Manager
 color e
 prompt $sPackager$s$e$s
 
