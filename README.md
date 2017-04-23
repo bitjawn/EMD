@@ -1,5 +1,13 @@
 # Express MongoDB Demo
-<h3>A node web application with MongoDB access.</h3>
+<h3>A node web application template.</h3>
+<div>
+```bash
+ ## Customize the products and user schemas using the MongoDB service
+ # The default user database: line 22 in the app.js file
+ # The product and user schemas located in the models directory
+ # The product database seeder located in the seed directory
+```
+</div>
 <ul>
     <li>NodeJS: 7.7.4</li>
     <li>NPM: 4.5.0</li>
