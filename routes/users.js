@@ -10,7 +10,7 @@ router.use(csrfProtection);
 router.get('/profile', isLoggedIn, function(req, res, next){
     const greet = cfc('hey ' + req.user.fname);
     const user = req.user;
-    res.render('user/profile',{title:'Profile', greeting:greet, user:{fname:cfc(user.fname),lname:cfc(user.lname)}, admin:false});
+    res.render('user/profile',{title:'Profile', greeting:greet, user:{fname:cfc(user.fname),lname:cfc(user.lname),email:cfc(user.email)}, admin:false});
 });
 
 router.get('/logout', function(req, res, next){

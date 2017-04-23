@@ -36,7 +36,7 @@
                     <p><strong>Email: </strong>{{user.email}}</p>
                 </div>
                 <div class="tabs-panel" id="panel3c">
-                    <img class="thumbnail profile-thumbnail" src="/graphics/products/vine.png">
+                    <img class="thumbnail profile-thumbnail" src={{# if user.picture}} "/{{user.picture}}" {{else}} "/graphics/products/vine.png" {{/if}}>
                 </div>
             </div>
         {{else}}
