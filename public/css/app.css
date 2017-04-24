@@ -15,6 +15,15 @@
     display:none;
 }
 
+.datetimestamp {
+    font-size:11pt;
+    font-family:Angkor;
+    color:#999;
+    color:rbg(9,9,9);
+    width:12vw;
+    height:3vh;
+    text-align:center;
+}
 
 img {
     height:170px;

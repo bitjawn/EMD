@@ -1,5 +1,7 @@
 $(document)
 .ready(function(){    
+    turnOnClock();
+
     $('#textInput').on('click', function(){
 		addTextInput();
 	});
@@ -202,7 +204,7 @@ function addEmailInput() {
 	$(divParent).appendTo('.registration-form');
 }
 
-function clock() {
+function turnOnClock() {
     interval = doInterval(dateTime,1);
 }
 

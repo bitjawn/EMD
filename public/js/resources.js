@@ -81,8 +81,7 @@ function showTaskProgress(minWidth, maxWidth, startWidth, delayedValue, object, 
 
 	
 	
-	
-	
+
 
 function element(id) { return document.getElementById(id); }
 
