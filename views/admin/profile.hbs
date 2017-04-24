@@ -31,6 +31,7 @@
                 <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true"><strong>{{greeting}}</strong></a></li>
                 <li class="tabs-title"><a href="#panel2c"><strong>Contact</strong></a></li>
                 <li class="tabs-title"><a href="#panel3c"><strong>Image</strong></a></li>
+                <li class="tabs-title"><a href="#panel4c" id="clock" class="clock datetimestamp"></a></li>
             </ul>
 
             <div class="tabs-content" data-tabs-content="collapsing-tabs">
@@ -50,12 +51,19 @@
                         </tbody>
                     </table>
                 </div>
+
                 <div class="tabs-panel" id="panel2c">
                     <p>{{user.email}}</p>
                 </div>
+
                 <div class="tabs-panel" id="panel3c">
                     <img class="thumbnail profile-thumbnail" src="/graphics/products/vine.png">
                 </div>
+
+                <div class="tabs-panel" id="panel4c">
+                    <div class="class"></div>
+                </div>                
+
             </div>
         {{else}}
             <h1>User Profile</h1>

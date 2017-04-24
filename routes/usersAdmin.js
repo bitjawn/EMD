@@ -3,13 +3,14 @@ var router = express.Router();
 var csrf = require('csurf');
 var Product = require('../models/product');
 var passport = require('passport');
+const cfc = require('../modules/cfc');
 
 var csrfProtection = csrf();
 
 router.get('/profile', isLoggedIn, csrfProtection, function(req, res, next){    
-    const greet = 'Greetings ' + req.user.fname;
+    const greet = cfc('greetings ' + req.user.fname);
     const user = req.user;
-    res.render('admin/profile', {admin:true,greeting:greet, user:user});
+    res.render('admin/profile', {admin:true,greeting:greet, user:{fname:cfc(user.fname),lname:cfc(user.lname),email:cfc(user.email)}});
 });
 
 router.get('/products', isLoggedIn, csrfProtection, function(req, res){
@@ -61,7 +62,7 @@ router.use('/', notLoggedIn, function(req, res, next){
     next();
 });
 
-/*
+//*
 router.get('/signup', csrfProtection, function(req, res, next){		
     var messages = req.flash('error');		
     res.render('admin/signup', {title:'Registration', csrfToken: req.csrfToken(),messages:messages, hasErrors: messages.length > 0, isAdmin:true, admin:true});
