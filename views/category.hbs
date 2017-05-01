@@ -7,6 +7,8 @@
    </div>
 {{/if}}
 
+{{# if products }}
+
 {{# each products }}
     <div class="products v-scroll">
         {{# each this }}
@@ -34,3 +36,13 @@
         {{/each}}
     </div>
 {{/each}}  
+{{else}}
+    <div class="row">
+        <div class="left-floater">
+            <img src="/graphics/face.png" class="no-items">
+        </div>
+        <div class="right-floater">
+            <h3>There aren't any items in the {{this.category}} category</h3>
+        </div>
+    </div>
+{{/if}}

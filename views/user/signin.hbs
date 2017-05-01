@@ -1,10 +1,13 @@
 <div class="row">
     <h1>Sign In</h1>
     {{#if hasErrors}}
-       <div class="alert alert-danger">
+       <div class="callout alert" data-closable>
         {{# each messages }}
             <p>{{this}}</p>
         {{/each }}
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+        </button>
        </div>
     {{/if}}
     <div class="small-12 medium-12 large-12 columns">
