@@ -1,6 +1,6 @@
 @echo off
 
-title Express Demo Package Manager
+title Express Demo III Package Manager
 color e
 prompt $sPackager$s$e$s
 

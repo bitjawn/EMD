@@ -100,8 +100,7 @@ passport.use('local.admin.signup', new LocalStrategy({
     req.checkBody('lname', 'Last name is required').notEmpty();
     req.checkBody('email', 'Invalid email').notEmpty().isEmail();
     req.checkBody('password', 'Invalid password length - minimum characters: 4').notEmpty().isLength({min:4});
-    req.checkBody('password', 'Passwords don\'t match').matches(req.password2, 'i');
-    
+       
     var errors = req.validationErrors();
     
     if (errors) {
