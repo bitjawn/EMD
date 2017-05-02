@@ -1,4 +1,8 @@
 /* Global */
+.curly {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
 .v-scroll {
 	overflow:scroll;
 }	
@@ -23,6 +27,43 @@
     width:17vw;
     height:3vh;
     text-align:center;
+}
+
+.header {
+    text-align:center;
+}
+
+.border {
+    border:solid 1pt rgb(212,221,200);
+}
+
+.map {
+    width:100%;
+    height:50vh;
+}
+
+.left-floater,
+.right-floater {
+    width:45%;
+}
+
+.left-floater {
+    float:left;
+}
+
+.center-floater {
+    float:center;
+    text-align:left;
+}
+
+.right-floater {
+    float:right;
+}
+
+.read-content * {
+    /* border:solid 1pt rgb(212,221,200); */
+    margin:12px;
+    padding:5px;
 }
 
 img {
@@ -159,25 +200,6 @@ img {
 
 
 
-
-
-
-.left-floater,
-.right-floater {
-    width:45%;
-}
-
-.left-floater {
-    float:left;
-}
-
-.center-floater {
-    float:center;
-}
-
-.right-floater {
-    float:right;
-}
 
 
 
